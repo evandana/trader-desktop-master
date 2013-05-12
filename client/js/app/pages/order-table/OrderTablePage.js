@@ -32,7 +32,7 @@ define(
 
         return BaseView.extend({
             tagName: 'section',
-            id: 'order-table',
+            id: 'order-table-page',
 
             template: {
                 name: 'OrdertablePageTemplate',

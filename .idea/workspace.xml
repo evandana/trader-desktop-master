@@ -5,13 +5,13 @@
     <ignored path="trader-desktop-master.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/OrderTablePage.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368291044375" ignored="false" />
-    <file path="/OrdersTemplate.html" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368304313050" ignored="false" />
-    <file path="/OrdersWidget.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368304230569" ignored="false" />
+    <file path="/OrdersTemplate.html" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368337267205" ignored="false" />
+    <file path="/OrdersWidget.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368339498431" ignored="false" />
     <file path="/index.scss" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368041647126" ignored="false" />
-    <file path="/_general.scss" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368304405365" ignored="false" />
+    <file path="/_general.scss" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368337228559" ignored="false" />
     <file path="/a.dummy" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368301556297" ignored="false" />
-    <file path="/OrderTablePageTemplate.html" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368041954828" ignored="false" />
-    <file path="/Router.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368045793434" ignored="false" />
+    <file path="/OrderTablePageTemplate.html" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368335125989" ignored="false" />
+    <file path="/Router.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368333710844" ignored="false" />
     <file path="/AppRouter.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368046121696" ignored="false" />
     <file path="/Orders.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368053227977" ignored="false" />
     <file path="/server.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368097282195" ignored="false" />
@@ -19,11 +19,12 @@
     <file path="$PROJECT_DIR$/../bullsfirst-jquery-backbone-master/src/js/app/domain/BaseAccounts.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368056354041" ignored="false" />
     <file path="/BaseAccounts.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368056352499" ignored="false" />
     <file path="/notes_evan.md" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368065104484" ignored="false" />
-    <file path="/HeaderWidget.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368099762729" ignored="false" />
-    <file path="/HeaderTemplate.html" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368098317929" ignored="false" />
+    <file path="/HeaderWidget.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368335653829" ignored="false" />
+    <file path="/HeaderTemplate.html" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368336488748" ignored="false" />
     <file path="$PROJECT_DIR$/../bullsfirst-jquery-backbone-master/src/js/app/pages/accounts/AccountsPage.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368290802413" ignored="false" />
     <file path="/Repository.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368295366448" ignored="false" />
     <file path="/LoginWidget.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368302774610" ignored="false" />
+    <file path="$PROJECT_DIR$/client/css/index.css" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368338892552" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,10 +83,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="OrdersWidget.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="OrdersWidget.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/js/app/widgets/orders/OrdersWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="14" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.23519164">
+            <state line="116" column="71" selection-start="3589" selection-end="3589" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -93,28 +94,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrdersTemplate.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/js/app/widgets/orders/OrdersTemplate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="16" selection-start="1032" selection-end="1032" vertical-scroll-proportion="-15.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_general.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/sass/common/_general.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="1" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Repository.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/js/app/domain/Repository.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="0" selection-start="2083" selection-end="2083" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -125,7 +108,7 @@
       <file leaf-file-name="Order.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/js/app/domain/Order.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="5" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
+            <state line="27" column="18" selection-start="723" selection-end="723" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -133,30 +116,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Orders.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/js/app/domain/Orders.js">
+      <file leaf-file-name="_general.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/sass/common/_general.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="24" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="0" selection-start="3513" selection-end="3513" vertical-scroll-proportion="-6.6">
+            <state line="55" column="14" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderRepository.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/OrderRepository.js">
+      <file leaf-file-name="HeaderWidget.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/js/app/widgets/header/HeaderWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="2" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0">
+            <state line="33" column="25" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -164,10 +136,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginWidget.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/js/app/widgets/login/LoginWidget.js">
+      <file leaf-file-name="OrderTablePageTemplate.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/js/app/pages/order-table/OrderTablePageTemplate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="31" selection-start="1610" selection-end="1610" vertical-scroll-proportion="0.0">
+            <state line="1" column="29" selection-start="59" selection-end="59" vertical-scroll-proportion="-0.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrdersTemplate.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/js/app/widgets/orders/OrdersTemplate.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="48" selection-start="710" selection-end="710" vertical-scroll-proportion="-11.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Orders.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/js/app/domain/Orders.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="3" selection-start="598" selection-end="598" vertical-scroll-proportion="0.3728223">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -178,7 +168,16 @@
       <file leaf-file-name="OrderTablePage.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/js/app/pages/order-table/OrderTablePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="55" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.0">
+            <state line="34" column="33" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HeaderTemplate.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/js/app/widgets/header/HeaderTemplate.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="6" selection-start="203" selection-end="203" vertical-scroll-proportion="-3.75">
               <folding />
             </state>
           </provider>
@@ -194,19 +193,19 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/js/app/pages/order-table/OrderTablePageTemplate.html" />
-        <option value="$PROJECT_DIR$/client/js/keel/Router.js" />
         <option value="$PROJECT_DIR$/client/js/app/framework/AppRouter.js" />
         <option value="$PROJECT_DIR$/client/index.html" />
         <option value="$PROJECT_DIR$/notes_evan.md" />
-        <option value="$PROJECT_DIR$/client/js/app/widgets/header/HeaderTemplate.html" />
-        <option value="$PROJECT_DIR$/client/js/app/widgets/header/HeaderWidget.js" />
         <option value="$PROJECT_DIR$/server/server.js" />
-        <option value="$PROJECT_DIR$/client/js/app/pages/order-table/OrderTablePage.js" />
         <option value="$PROJECT_DIR$/client/js/app/domain/Orders.js" />
         <option value="$PROJECT_DIR$/client/js/app/widgets/login/LoginWidget.js" />
         <option value="$PROJECT_DIR$/client/js/app/domain/Repository.js" />
         <option value="$PROJECT_DIR$/client/js/app/domain/Order.js" />
+        <option value="$PROJECT_DIR$/client/js/keel/Router.js" />
+        <option value="$PROJECT_DIR$/client/js/app/pages/order-table/OrderTablePage.js" />
+        <option value="$PROJECT_DIR$/client/js/app/pages/order-table/OrderTablePageTemplate.html" />
+        <option value="$PROJECT_DIR$/client/js/app/widgets/header/HeaderWidget.js" />
+        <option value="$PROJECT_DIR$/client/js/app/widgets/header/HeaderTemplate.html" />
         <option value="$PROJECT_DIR$/client/js/app/widgets/orders/OrdersTemplate.html" />
         <option value="$PROJECT_DIR$/client/sass/common/_general.scss" />
         <option value="$PROJECT_DIR$/client/js/app/widgets/orders/OrdersWidget.js" />
@@ -488,6 +487,28 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trader-desktop-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trader-desktop-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -701,7 +722,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1528" height="1028" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -720,7 +741,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970452" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22807017" sideWeight="0.688326" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22807017" sideWeight="0.688326" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -784,14 +805,25 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/client/js/keel/ExceptionUtil.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="48" selection-start="5919" selection-end="5919" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.9731993">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/Order.js">
+    <entry file="file://$PROJECT_DIR$/client/js/keel/Message.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.20603015">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/keel/MessageBus.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
@@ -802,64 +834,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/keel/Router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="19" selection-start="2739" selection-end="2739" vertical-scroll-proportion="0.6482412">
+        <state line="57" column="13" selection-start="1407" selection-end="1407" vertical-scroll-proportion="-0.18090452">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/app/framework/App.js">
+    <entry file="file://$PROJECT_DIR$/client/js/app/framework/AppRouter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="74" selection-start="2309" selection-end="2309" vertical-scroll-proportion="0.4522613">
+        <state line="22" column="18" selection-start="727" selection-end="727" vertical-scroll-proportion="0.2964824">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/app/pages/home/HomePageTemplate.html">
+    <entry file="file://$PROJECT_DIR$/client/sass/common/_colors.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="3" column="0" selection-start="172" selection-end="178" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/app/pages/home/HomePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/app/widgets/login/LoginWidget.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="31" selection-start="1610" selection-end="1610" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/app/domain/Repository.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="0" selection-start="2083" selection-end="2083" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/app/pages/order-table/OrderTablePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="55" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.0">
+        <state line="34" column="33" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/OrderRepository.js">
+    <entry file="file://$PROJECT_DIR$/client/js/app/widgets/header/HeaderWidget.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="2" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0">
+        <state line="33" column="25" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/app/pages/order-table/OrderTablePageTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="29" selection-start="59" selection-end="59" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/app/widgets/orders/OrdersTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="48" selection-start="710" selection-end="710" vertical-scroll-proportion="-11.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/sass/common/_general.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="14" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/app/widgets/header/HeaderTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="6" selection-start="203" selection-end="203" vertical-scroll-proportion="-3.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/app/domain/Repository.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -868,37 +910,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/app/domain/Order.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="5" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="0" selection-start="3513" selection-end="3513" vertical-scroll-proportion="-6.6">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/app/widgets/orders/OrdersTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="16" selection-start="1032" selection-end="1032" vertical-scroll-proportion="-15.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/sass/common/_general.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="1" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/app/domain/Orders.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="24" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0">
+        <state line="27" column="18" selection-start="723" selection-end="723" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -907,7 +919,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/app/widgets/orders/OrdersWidget.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="14" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.23519164">
+        <state line="116" column="71" selection-start="3589" selection-end="3589" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/app/domain/Orders.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="3" selection-start="598" selection-end="598" vertical-scroll-proportion="0.3728223">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

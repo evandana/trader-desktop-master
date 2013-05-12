@@ -65,9 +65,6 @@ function(Message, MessageBus, Backbone) {
         * @method goToPage
         * @param {String} [page=undefined] The page name to navigate to
         **/
-        testRoute: function(page) {
-           alert('hi ' + page);
-        },
 
         goToPage: function(page) {
 

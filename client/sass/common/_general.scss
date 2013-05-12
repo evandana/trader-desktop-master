@@ -25,25 +25,76 @@ select {
 }
 
 /* -----------------------------------------------------------------------------
+ * ANY Page
+ * -------------------------------------------------------------------------- */
+.userName {
+  font-style: italic;
+  font-weight:normal;
+}
+.floatRight {
+  float:right;
+}
+.floatLeft {
+  float:left;
+}
+.alignLeft {
+  display:inline-block;
+  position: relative;
+  left:0;
+}
+.alignRight {
+  display:inline-block;
+  position: relative;
+  right:0;
+}
+
+/* -----------------------------------------------------------------------------
+ * ANY Page
+ * -------------------------------------------------------------------------- */
+#header {
+  width:100%;
+  padding:0 10px;
+  border-bottom:1px solid $black;
+}
+
+.text-button {
+  text-decoration: none;
+}
+.text-button:hover {
+  text-decoration: underline;
+}
+/* -----------------------------------------------------------------------------
  * Home Page
  * -------------------------------------------------------------------------- */
 #home-page {
-    padding: 10px;
+    padding: 7px;
 }
 
 #home-page .button-bar {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 /* -----------------------------------------------------------------------------
  * Order Table Page
  * -------------------------------------------------------------------------- */
 #order-table-page {
-    padding: 10px;
+  margin:auto;
+  border:1px solid $black;
+  width:850px;
+  position:relative;
+}
+table.js-orderTable {
+  width:100%;
+}
+
+#order-table-page .button-bar {
+  padding: 7px;
 }
 #order-table-page .button-bar a {
   display:inline-block;
+  padding-right:5px;
 }
+
 
 .textAlign-center {text-align: center}
 .textAlign-left {text-align: left}

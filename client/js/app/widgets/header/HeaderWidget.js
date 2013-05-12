@@ -31,6 +31,7 @@ define(
 
         return BaseView.extend({
             tagName: 'section',
+            id: 'header',
 
             elements: ['userSelector'],
 

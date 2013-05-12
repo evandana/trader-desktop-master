@@ -22,15 +22,18 @@
 define(
     [
         'app/domain/Repository',
+        'app/domain/Order',
+        'app/domain/Orders',
         'backbone',
         'keel/BaseView',
         'text!app/widgets/orders/OrdersTemplate.html'
     ],
-    function(Repository, Backbone, BaseView, OrdersTemplate) {
+    function(Repository, Order, Orders, Backbone, BaseView, OrdersTemplate) {
         'use strict';
 
         return BaseView.extend({
             tagName: 'section',
+            id: 'order-table',
 
             elements: ['orderTable'],
 
@@ -61,8 +64,6 @@ define(
                 Backbone.View.apply( this, arguments );
 
                 this.addOrder();
-                this.addOrder();
-                this.addOrder();
             },
 
             render: function() {
@@ -92,7 +93,33 @@ define(
                     'traderId': 'AM'
                 };
 
-                this.model.add($.post('rest/orders', data));
+                $.fn.serializeObject = function () {
+                    var o = {};
+                    var a = this.serializeArray();
+                    $.each(a, function () {
+                        if (o[this.name] !== undefined) {
+                            if (!o[this.name].push) {
+                                o[this.name] = [o[this.name]];
+                            }
+                            o[this.name].push(this.value || '');
+                        } else {
+                            o[this.name] = this.value || '';
+                        }
+                    });
+                    return o;
+                };
+
+
+//                var orderDetails = $(event.currentTarget).serializeObject();
+                var order = new Order();
+                order.save(data, {
+                    success: function () {
+                        Backbone.history.navigate('', {trigger: true});
+                    }
+                });
+                return false;
+
+                //$.post(this.model.url, data);
             },
 
             placeOrder: function() {
