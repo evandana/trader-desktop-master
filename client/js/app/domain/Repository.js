@@ -72,7 +72,7 @@ define(
         _orders.fetch();
 
         Socket.on('orderCreatedEvent', function(order) {
-            console.log('order created: ', order);
+            console.log('Socket.on > orderCreatedEvent: ', order);
         });
 
         Socket.on('placementCreatedEvent', function(placement) {

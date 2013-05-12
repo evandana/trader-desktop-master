@@ -115,6 +115,7 @@ app.get('/rest/instruments', function (req, res) {
 // }
 app.post('/rest/orders', function (req, res) {
     'use strict';
+
     var orderParams = req.body;
     var order = orderRepository.persist(orderParams);
 

@@ -33,6 +33,7 @@ define(
         return BaseView.extend({
             tagName: 'section',
             id: 'order-table-page',
+            user: 'user',
 
             template: {
                 name: 'OrdertablePageTemplate',
@@ -46,7 +47,7 @@ define(
                         viewClass: HeaderWidget,
                         parentElement: this.$el,
                         options: {
-                            model: Repository.getUser()
+                            model: Repository.getloggedInUser().attributes.name
                         }
                     },
                     {

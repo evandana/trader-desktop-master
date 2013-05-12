@@ -27,10 +27,6 @@ select {
 /* -----------------------------------------------------------------------------
  * ANY Page
  * -------------------------------------------------------------------------- */
-.userName {
-  font-style: italic;
-  font-weight:normal;
-}
 .floatRight {
   float:right;
 }
@@ -49,12 +45,18 @@ select {
 }
 
 /* -----------------------------------------------------------------------------
- * ANY Page
+ * Header Widget
  * -------------------------------------------------------------------------- */
 #header {
   width:100%;
-  padding:0 10px;
+  padding:5px 10px;
   border-bottom:1px solid $black;
+}
+
+.userName {
+  font-style: italic;
+  font-weight:normal;
+  padding:0 10px;
 }
 
 .text-button {
@@ -78,7 +80,7 @@ select {
  * Order Table Page
  * -------------------------------------------------------------------------- */
 #order-table-page {
-  margin:auto;
+  margin:10px auto 0 auto;
   border:1px solid $black;
   width:850px;
   position:relative;

@@ -22,13 +22,12 @@
 define(
     [
         'app/domain/Repository',
-        'app/domain/Order',
-        'app/domain/Orders',
+        'app/services/OrderService',
         'backbone',
         'keel/BaseView',
         'text!app/widgets/orders/OrdersTemplate.html'
     ],
-    function(Repository, Order, Orders, Backbone, BaseView, OrdersTemplate) {
+    function(Repository, OrderService, Backbone, BaseView, OrdersTemplate) {
         'use strict';
 
         return BaseView.extend({
@@ -54,7 +53,11 @@ define(
             },
 
             initialize: function() {
-                this.model.on('change', this.render, this);
+                this.model.on('change', function () {
+                    this.model = Repository.fetchOrders().toJSON();
+                    this.render();
+                }, this);
+                $('#multi-trade-dialog').hide();
             },
 
             constructor: function() {
@@ -93,33 +96,40 @@ define(
                     'traderId': 'AM'
                 };
 
-                $.fn.serializeObject = function () {
-                    var o = {};
-                    var a = this.serializeArray();
-                    $.each(a, function () {
-                        if (o[this.name] !== undefined) {
-                            if (!o[this.name].push) {
-                                o[this.name] = [o[this.name]];
-                            }
-                            o[this.name].push(this.value || '');
-                        } else {
-                            o[this.name] = this.value || '';
-                        }
-                    });
-                    return o;
-                };
 
+//                OrderService.createOrder(data, Backbone.history.navigate('/order-table'));
+//                OrderService.createOrder(data);
+
+//                $.fn.serializeObject = function () {
+//                    var o = {};
+//                    var a = this.serializeArray();
+//                    $.each(a, function () {
+//                        if (o[this.name] !== undefined) {
+//                            if (!o[this.name].push) {
+//                                o[this.name] = [o[this.name]];
+//                            }
+//                            o[this.name].push(this.value || '');
+//                        } else {
+//                            o[this.name] = this.value || '';
+//                        }
+//                    });
+//                    return o;
+//                };
 
 //                var orderDetails = $(event.currentTarget).serializeObject();
-                var order = new Order();
-                order.save(data, {
-                    success: function () {
-                        Backbone.history.navigate('', {trigger: true});
-                    }
-                });
-                return false;
+//                var order = new Order();
+//                order.save(data, {
+//                    success: function () {
+//                        Backbone.history.navigate('', {trigger: true});
+//                    }
+//                });
+//                return false;
 
-                //$.post(this.model.url, data);
+                $.post(this.model.url, data);
+            },
+
+            trade: function () {
+                $( '#multi-trade-dialog' ).show();
             },
 
             placeOrder: function() {
