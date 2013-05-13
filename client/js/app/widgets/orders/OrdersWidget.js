@@ -84,7 +84,8 @@ define(
             },
 
             getOrders: function () {
-                this.$el.html($.get('rest/orders'));
+                Repository.getOrders();
+//                this.$el.html($.get('rest/orders'));
             },
 
             addOrder: function () {
@@ -125,7 +126,15 @@ define(
 //                });
 //                return false;
 
-                $.post(this.model.url, data);
+                $.ajax({
+                    url: this.model.url,
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(data)
+                });
+
+
+//                $.post(this.model.url, data);
             },
 
             trade: function () {
