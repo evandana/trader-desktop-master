@@ -50,7 +50,14 @@ define(
         var _repository = {
             getUsers: function() { return _users; },
             getInstruments: function() { return _instruments; },
-            getOrders: function() { return _orders; },
+            getOrders: function() {
+                _orders.fetch({
+                    success: function() {
+                        console.log('orders back: ' , _orders.length);
+                    }
+                });
+                return _orders;
+            },
             getloggedInUser: function() { return _loggedInUser; },
 
             getUser: function(id) {
@@ -72,11 +79,13 @@ define(
         _orders.fetch();
 
         Socket.on('orderCreatedEvent', function(order) {
-            console.log('Socket.on > orderCreatedEvent: ', order);
+            _orders.add(order);
+            //console.log('Socket.on > orderCreatedEvent: ', order);
         });
 
         Socket.on('placementCreatedEvent', function(placement) {
-            console.log(placement);
+
+//            console.log(placement);
         });
 
         Socket.on('executionCreatedEvent', function(execution) {

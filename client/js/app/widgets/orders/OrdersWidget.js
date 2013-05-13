@@ -53,10 +53,10 @@ define(
             },
 
             initialize: function() {
-                this.model.on('change', function () {
-                    this.model = Repository.fetchOrders().toJSON();
-                    this.render();
-                }, this);
+//                this.model.on('change', function () {
+//                    this.model = Repository.fetchOrders().toJSON();
+//                    this.render();
+//                }, this);
                 $('#multi-trade-dialog').hide();
             },
 
@@ -125,12 +125,15 @@ define(
 //                    }
 //                });
 //                return false;
-
+                var that = this;
                 $.ajax({
-                    url: this.model.url,
+                    url: 'http://localhost:8080/rest/orders',
                     type: 'POST',
                     contentType: 'application/json',
-                    data: JSON.stringify(data)
+                    data: JSON.stringify(data),
+                    success: function () {
+                        that.render();
+                    }
                 });
 
 
