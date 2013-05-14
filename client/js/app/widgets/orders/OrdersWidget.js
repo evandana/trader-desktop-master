@@ -15,108 +15,51 @@
  */
 
 /**
- * app/widgets/orders/OrdersWidget
+ * app/pages/order-table/OrderTablePage
  *
- * @author Naresh Bhatia
+ * @author Naresh Bhatia & Evan Dana
  */
 define(
     [
         'app/domain/Repository',
-        'app/services/OrderService',
-        'backbone',
+        'app/widgets/orders/OrderActions',
+        'app/widgets/orders/OrderTable',
         'keel/BaseView',
-        'text!app/widgets/orders/OrdersTemplate.html'
+        'text!app/pages/order-table/OrderWidgetTemplate.html'
     ],
-    function(Repository, OrderService, Backbone, BaseView, OrdersTemplate) {
+    function(Repository, OrderActions, OrderTable, BaseView, OrderWidgetTemplate) {
         'use strict';
 
         return BaseView.extend({
             tagName: 'section',
-            id: 'order-table',
-
-            elements: ['orderTable'],
+            id: 'order-widget',
 
             template: {
-                name: 'OrdersTemplate',
-                source: OrdersTemplate
+                name: 'OrderWidgetTemplate',
+                source: OrderWidgetTemplate
             },
 
-            events: {
-                'click .js-trade': 'trade',
-                'click .js-deleteAll': 'deleteAll',
-                'click .js-refresh': 'getOrders',
-
-                // TODO: delete
-                'click .js-addOrder': 'addOrder',
-                'click .js-placeOrder': 'placeOrder',
-                'click .js-getOrders': 'getOrders'
-            },
-
-            initialize: function() {
-                this.model.on('change', this.render, this);
-                $('#multi-trade-dialog').hide();
-            },
-
-            constructor: function() {
-                this.children = {};
-
-                // Call super
-                Backbone.View.apply( this, arguments );
-
-                this.addOrder();
-            },
-
-            render: function() {
-
-                var template = this.getTemplate();
-                var context = this.model.toJSON();
-
-                // Destroy existing children
-                this.destroyChildren();
-
-                this.$el.html(template({orders: context}));
-                this._setupElements();
-
-                return this;
-            },
-
-            getOrders: function () {
-                Repository.getOrders();
-            },
-
-            addOrder: function () {
-                var data = {
-                    'side': 'Buy',
-                    'symbol': 'AAPL',
-                    'quantity': 10000,
-                    'limitPrice': 426.24,
-                    'traderId': 'AM'
-                };
-
-                var that = this;
-                $.ajax({
-                    url: 'http://localhost:8080/rest/orders',
-                    type: 'POST',
-                    contentType: 'application/json',
-                    data: JSON.stringify(data),
-                    success: function () {
-                        that.render();
+            postRender: function() {
+                this.addChildren([
+                    {
+                        id: 'OrderActions',
+                        viewClass: OrderActions,
+                        parentElement: this.$el,
+                        options: {
+                            collection: Repository.getOrders(),
+                            user: Repository.getloggedInUser()
+                        }
+                    },
+                    {
+                        id: 'OrderTable',
+                        viewClass: OrderTable,
+                        parentElement: this.$el,
+                        options: {
+                            collection: Repository.getOrders()
+                        }
                     }
-                });
-            },
-
-            trade: function () {
-                $( '#multi-trade-dialog' ).show();
-            },
-
-            placeOrder: function() {
-//                    $('#orderTable').setAttribute('style', 'border:1px solid #f00;');
-//                console.log('called: placeOrder()');
-//                var loggedInUserId = this.userSelectorElement.val();
-//                Repository.setloggedInUser(loggedInUserId);
-//                Backbone.history.navigate('order-table', true);
-                    return false;
-                }
+                ]);
+            }
         });
     }
 );

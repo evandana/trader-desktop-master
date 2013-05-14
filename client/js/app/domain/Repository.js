@@ -49,10 +49,17 @@ define(
 
         var _repository = {
             getUsers: function() { return _users; },
-            getInstruments: function() { return _instruments; },
+            getInstruments: function() {
+                _instruments.fetch(); // async
+                return _instruments; // may not be updated
+            },
             getOrders: function() {
+                _orders.fetch(); // async
+                return _orders; // may not be updated
+            },
+            refreshOrders: function () {
+                _orders.reset();
                 _orders.fetch();
-                return _orders;
             },
             getloggedInUser: function() { return _loggedInUser; },
 
@@ -78,14 +85,19 @@ define(
             _orders.add(order);
         });
 
+        Socket.on('allOrdersDeletedEvent', function() {
+            _orders.reset();
+        });
+
         Socket.on('placementCreatedEvent', function(placement) {
             _orders.fetch();
-
+            console.log(placement);
             //_orders.set(placement.orderId);
         });
 
         Socket.on('executionCreatedEvent', function(execution) {
             _orders.fetch();
+            console.log(execution);
 //            _orders.set(execution);
         });
 

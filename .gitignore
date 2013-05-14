@@ -1,0 +1,10 @@
+*.sublime-workspace
+.DS_Store
+.sass-cache
+node_modules
+client/css
+.idea/workspace.xml
+
+.gitignore
+
+.gitignore

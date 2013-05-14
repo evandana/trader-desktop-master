@@ -47,6 +47,8 @@
 // Widget Stylesheets
 // -----------------------------------------------------------------------------
 
+.iconColorableBg {display: inline-block; background: #000; padding: 2px 4px;}
+
 /* OrdersWidget */
 .js-orderTable th, .js-orderTable td {padding:3px 5px}
 .js-orderTable th {font-weight: bold; background:$table-row-separator-color}

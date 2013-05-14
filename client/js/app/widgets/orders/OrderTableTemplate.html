@@ -1,3 +1,8 @@
+{{! include OrderActions }}
+
+{{! include OrderRow }}
+
+
 <table class="js-orderTable">
     <tr>
         <th class="textAlign-center">ID</th>
@@ -12,7 +17,7 @@
         <th class="textAlign-center">Status</th>
         <th class="textAlign-center">Trader</th>
     </tr>
-{{#each orders}}
+    {{#each orders}}
     <tr>
         <td class="textAlign-center">{{id}}</td>
         <td class="textAlign-left">{{creationTime}}</td>
@@ -26,21 +31,5 @@
         <td class="textAlign-center">{{status}}</td>
         <td class="textAlign-center">{{traderId}}</td>
     </tr>
-{{/each}}
+    {{/each}}
 </table>
-
-
-<div id="multi-trade-dialog">
-    <a class="js-trade button text-button" href="#">Create Multiple Trades</a>
-
-    <div id="multi-trade-form" title="Create multiple trades">
-        <form>
-            <fieldset>
-                <label for="numberOfTrades">Enter number of trades</label>
-                <input type="text" name="numberOfTrades" id="numberOfTrades" class="text ui-widget-content ui-corner-all" />
-            </fieldset>
-        </form>
-        <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Dummy text</p>
-    </div>
-
-</div>

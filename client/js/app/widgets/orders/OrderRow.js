@@ -78,77 +78,7 @@ define(
                 this._setupElements();
 
                 return this;
-            },
-
-            getOrders: function () {
-                Repository.getOrders();
-//                this.$el.html($.get('rest/orders'));
-            },
-
-            addOrder: function () {
-                var data = {
-                    'side': 'Buy',
-                    'symbol': 'AAPL',
-                    'quantity': 10000,
-                    'limitPrice': 426.24,
-                    'traderId': 'AM'
-                };
-
-
-//                OrderService.createOrder(data, Backbone.history.navigate('/order-table'));
-//                OrderService.createOrder(data);
-
-//                $.fn.serializeObject = function () {
-//                    var o = {};
-//                    var a = this.serializeArray();
-//                    $.each(a, function () {
-//                        if (o[this.name] !== undefined) {
-//                            if (!o[this.name].push) {
-//                                o[this.name] = [o[this.name]];
-//                            }
-//                            o[this.name].push(this.value || '');
-//                        } else {
-//                            o[this.name] = this.value || '';
-//                        }
-//                    });
-//                    return o;
-//                };
-
-//                var orderDetails = $(event.currentTarget).serializeObject();
-//                var order = new Order();
-//                order.save(data, {
-//                    success: function () {
-//                        Backbone.history.navigate('', {trigger: true});
-//                    }
-//                });
-//                return false;
-                var that = this;
-                $.ajax({
-                    url: 'http://localhost:8080/rest/orders',
-                    type: 'POST',
-                    contentType: 'application/json',
-                    data: JSON.stringify(data),
-                    success: function () {
-                        that.render();
-                    }
-                });
-
-
-//                $.post(this.model.url, data);
-            },
-
-            trade: function () {
-                $( '#multi-trade-dialog' ).show();
-            },
-
-            placeOrder: function() {
-//                    $('#orderTable').setAttribute('style', 'border:1px solid #f00;');
-//                console.log('called: placeOrder()');
-//                var loggedInUserId = this.userSelectorElement.val();
-//                Repository.setloggedInUser(loggedInUserId);
-//                Backbone.history.navigate('order-table', true);
-                    return false;
-                }
+            }
         });
     }
 );

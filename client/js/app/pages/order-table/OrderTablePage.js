@@ -55,7 +55,8 @@ define(
                         viewClass: OrdersWidget,
                         parentElement: this.$el,
                         options: {
-                            model: Repository.getOrders()
+                            collection: Repository.getOrders(),
+                            user: Repository.getloggedInUser()
                         }
                     }
                 ]);
