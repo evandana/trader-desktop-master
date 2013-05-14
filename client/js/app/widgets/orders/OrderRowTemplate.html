@@ -1,0 +1,59 @@
+<div class="button-bar alignLeft">
+    <a class="js-trade button text-button" href="#">Trade</a>
+    <a class="js-deleteAll button text-button" href="#">DeleteAll</a>
+    <a class="js-refresh button text-button" href="#">Refresh</a>
+</div>
+
+<div class="button-bar floatRight">
+    <a class="js-addOrder text-button" href="#">AddOrder</a>
+    <a class="js-placeOrder text-button" href="#">Place Order</a>
+    <a class="js-getOrders text-button" href="#">Get Orders</a>
+</div>
+
+
+<table class="js-orderTable">
+    <tr>
+        <th class="textAlign-center">ID</th>
+        <th class="textAlign-left">Creation Time</th>
+        <th class="textAlign-center">Side</th>
+        <th class="textAlign-center">Symbol</th>
+        <th class="textAlign-right">Quantity</th>
+        <th class="textAlign-right">Placed</th>
+        <th class="textAlign-right">Executed</th>
+        <th class="textAlign-right">Limit Price</th>
+        <th class="textAlign-right">Priority</th>
+        <th class="textAlign-center">Status</th>
+        <th class="textAlign-center">Trader</th>
+    </tr>
+{{#each orders}}
+    <tr>
+        <td class="textAlign-center">{{id}}</td>
+        <td class="textAlign-left">{{creationTime}}</td>
+        <td class="textAlign-center">{{side}}</td>
+        <td class="textAlign-center">{{symbol}}</td>
+        <td class="textAlign-right">{{quantity}}</td>
+        <td class="textAlign-right">{{quantityPlaced}}</td>
+        <td class="textAlign-right">{{quantityExecuted}}</td>
+        <td class="textAlign-right">{{limitPrice}}</td>
+        <td class="textAlign-right">{{priority}}</td>
+        <td class="textAlign-center">{{status}}</td>
+        <td class="textAlign-center">{{traderId}}</td>
+    </tr>
+{{/each}}
+</table>
+
+
+<div id="multi-trade-dialog">
+    <a class="js-trade button text-button" href="#">Create Multiple Trades</a>
+
+    <div id="multi-trade-form" title="Create multiple trades">
+        <form>
+            <fieldset>
+                <label for="numberOfTrades">Enter number of trades</label>
+                <input type="text" name="numberOfTrades" id="numberOfTrades" class="text ui-widget-content ui-corner-all" />
+            </fieldset>
+        </form>
+        <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Dummy text</p>
+    </div>
+
+</div>

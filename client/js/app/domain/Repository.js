@@ -51,11 +51,7 @@ define(
             getUsers: function() { return _users; },
             getInstruments: function() { return _instruments; },
             getOrders: function() {
-                _orders.fetch({
-                    success: function() {
-                        console.log('orders back: ' , _orders.length);
-                    }
-                });
+                _orders.fetch();
                 return _orders;
             },
             getloggedInUser: function() { return _loggedInUser; },
@@ -80,16 +76,17 @@ define(
 
         Socket.on('orderCreatedEvent', function(order) {
             _orders.add(order);
-            //console.log('Socket.on > orderCreatedEvent: ', order);
         });
 
         Socket.on('placementCreatedEvent', function(placement) {
+            _orders.fetch();
 
-//            console.log(placement);
+            //_orders.set(placement.orderId);
         });
 
         Socket.on('executionCreatedEvent', function(execution) {
-            console.log(execution);
+            _orders.fetch();
+//            _orders.set(execution);
         });
 
         return _repository;

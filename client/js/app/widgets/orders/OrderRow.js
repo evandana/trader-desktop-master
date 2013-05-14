@@ -82,6 +82,7 @@ define(
 
             getOrders: function () {
                 Repository.getOrders();
+//                this.$el.html($.get('rest/orders'));
             },
 
             addOrder: function () {
@@ -93,6 +94,34 @@ define(
                     'traderId': 'AM'
                 };
 
+
+//                OrderService.createOrder(data, Backbone.history.navigate('/order-table'));
+//                OrderService.createOrder(data);
+
+//                $.fn.serializeObject = function () {
+//                    var o = {};
+//                    var a = this.serializeArray();
+//                    $.each(a, function () {
+//                        if (o[this.name] !== undefined) {
+//                            if (!o[this.name].push) {
+//                                o[this.name] = [o[this.name]];
+//                            }
+//                            o[this.name].push(this.value || '');
+//                        } else {
+//                            o[this.name] = this.value || '';
+//                        }
+//                    });
+//                    return o;
+//                };
+
+//                var orderDetails = $(event.currentTarget).serializeObject();
+//                var order = new Order();
+//                order.save(data, {
+//                    success: function () {
+//                        Backbone.history.navigate('', {trigger: true});
+//                    }
+//                });
+//                return false;
                 var that = this;
                 $.ajax({
                     url: 'http://localhost:8080/rest/orders',
@@ -103,6 +132,9 @@ define(
                         that.render();
                     }
                 });
+
+
+//                $.post(this.model.url, data);
             },
 
             trade: function () {

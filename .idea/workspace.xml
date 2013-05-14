@@ -6,10 +6,10 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/OrderTablePage.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368345379497" ignored="false" />
     <file path="/OrdersTemplate.html" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368345933199" ignored="false" />
-    <file path="/OrdersWidget.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368478204814" ignored="false" />
+    <file path="/OrdersWidget.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368478783801" ignored="false" />
     <file path="/index.scss" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368041647126" ignored="false" />
     <file path="/_general.scss" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368344070150" ignored="false" />
-    <file path="/a.dummy" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368473153328" ignored="false" />
+    <file path="/a.dummy" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368479393288" ignored="false" />
     <file path="/OrderTablePageTemplate.html" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368335125989" ignored="false" />
     <file path="/Router.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368333710844" ignored="false" />
     <file path="/AppRouter.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368046121696" ignored="false" />
@@ -22,12 +22,13 @@
     <file path="/HeaderWidget.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368335653829" ignored="false" />
     <file path="/HeaderTemplate.html" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368336488748" ignored="false" />
     <file path="$PROJECT_DIR$/../bullsfirst-jquery-backbone-master/src/js/app/pages/accounts/AccountsPage.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368290802413" ignored="false" />
-    <file path="/Repository.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368477815629" ignored="false" />
+    <file path="/Repository.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368537850525" ignored="false" />
     <file path="/LoginWidget.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368302774610" ignored="false" />
     <file path="$PROJECT_DIR$/client/css/index.css" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368346488271" ignored="false" />
     <file path="/OrderService.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368341972322" ignored="false" />
     <file path="/TradeTemplate.html" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368345292259" ignored="false" />
     <file path="/TradeWidget.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368344829381" ignored="false" />
+    <file path="/Order.js" changelist="5003c336-cd7d-4c1d-a52f-22cc3b2fd051" time="1368479200317" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,16 +92,27 @@
       <file leaf-file-name="Repository.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/js/app/domain/Repository.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="0" selection-start="2173" selection-end="2173" vertical-scroll-proportion="0.0">
+            <state line="83" column="45" selection-start="2577" selection-end="2577" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#595#961#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Order.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/Order.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="124" column="34" selection-start="3752" selection-end="3752" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderTablePage.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="OrderTablePage.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/js/app/pages/order-table/OrderTablePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="5" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.8561644">
+            <state line="33" column="31" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -115,10 +127,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrdersWidget.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="OrdersWidget.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/js/app/widgets/orders/OrdersWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="19" selection-start="4429" selection-end="4429" vertical-scroll-proportion="0.0">
+            <state line="83" column="39" selection-start="2400" selection-end="2400" vertical-scroll-proportion="0.36305732">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -154,7 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/js/app/domain/Order.js" />
         <option value="$PROJECT_DIR$/client/js/keel/Router.js" />
         <option value="$PROJECT_DIR$/client/js/app/pages/order-table/OrderTablePageTemplate.html" />
         <option value="$PROJECT_DIR$/client/js/app/widgets/header/HeaderWidget.js" />
@@ -168,6 +179,7 @@
         <option value="$PROJECT_DIR$/notes_evan.md" />
         <option value="$PROJECT_DIR$/client/js/app/services/services.js" />
         <option value="$PROJECT_DIR$/client/js/app/services/OrderService.js" />
+        <option value="$PROJECT_DIR$/server/Order.js" />
         <option value="$PROJECT_DIR$/client/js/app/domain/Repository.js" />
         <option value="$PROJECT_DIR$/client/js/app/widgets/orders/OrdersWidget.js" />
       </list>
@@ -693,6 +705,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31134564" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -707,11 +720,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970452" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2963259" sideWeight="0.688326" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2963259" sideWeight="0.68865436" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.311674" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -777,15 +789,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/js/app/widgets/header/HeaderWidget.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="27" selection-start="1660" selection-end="1660" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/js/app/framework/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -858,26 +861,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/app/pages/order-table/OrderTablePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="31" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/Order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="34" selection-start="3752" selection-end="3752" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/js/app/domain/Repository.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="2173" selection-end="2173" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="83" column="45" selection-start="2577" selection-end="2577" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#595#961#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/app/widgets/orders/OrdersWidget.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="19" selection-start="4429" selection-end="4429" vertical-scroll-proportion="0.0">
+        <state line="83" column="39" selection-start="2400" selection-end="2400" vertical-scroll-proportion="0.36305732">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/app/pages/order-table/OrderTablePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="5" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.8561644">
-          <folding />
         </state>
       </provider>
     </entry>
