@@ -1,5 +1,0 @@
-*.sublime-workspace
-.DS_Store
-.sass-cache
-node_modules
-client/css
