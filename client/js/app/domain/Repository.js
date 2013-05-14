@@ -81,11 +81,13 @@ define(
         Socket.on('placementCreatedEvent', function(placement) {
             _orders.fetch();
 
+            console.log(placement);
             //_orders.set(placement.orderId);
         });
 
         Socket.on('executionCreatedEvent', function(execution) {
             _orders.fetch();
+            console.log(execution);
 //            _orders.set(execution);
         });
 
