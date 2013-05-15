@@ -91,7 +91,7 @@ define(
             },
 
             refreshOrders: function () {
-                Repository.refreshOrders();
+                Repository.fetchOrders();
             }
         });
     }

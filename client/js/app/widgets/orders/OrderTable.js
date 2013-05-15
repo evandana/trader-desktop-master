@@ -46,7 +46,7 @@ define(
                 this.collection.on('add', this.renderRow, this);
                 this.collection.on('delete', this.render, this);
 //                this.collection.on('change', this.render, this);
-//                this.collection.on('reset', this.render, this);
+                this.collection.on('reset', this.render, this);
 //                this.collection.on('sync', this.render, this);
             },
 

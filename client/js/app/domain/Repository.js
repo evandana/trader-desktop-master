@@ -57,10 +57,6 @@ define(
                 _orders.fetch(); // async
                 return _orders; // may not be updated
             },
-            refreshOrders: function () {
-                _orders.reset();
-                _orders.fetch();
-            },
             getloggedInUser: function() { return _loggedInUser; },
 
             getUser: function(id) {
@@ -90,15 +86,23 @@ define(
         });
 
         Socket.on('placementCreatedEvent', function(placement) {
-            _orders.add(_orders.get(placement.idAttribute), {merge: true});
-//            console.log(placement);
-            //_orders.set(placement.orderId);
+            var currentOrder = _orders.get(placement.orderId);
+            var currentQuantity = currentOrder.get('quantityPlaced');
+            currentOrder.set({
+                quantityPlaced: currentQuantity + placement.quantityPlaced,
+                status: placement.status
+            });
+            _orders.add(currentOrder, {merge: true});
         });
 
         Socket.on('executionCreatedEvent', function(execution) {
-            _orders.fetch();
-            console.log(execution);
-//            _orders.set(execution);
+            var currentOrder = _orders.get(execution.orderId);
+            var currentQuantity = currentOrder.get('quantityExecuted');
+            currentOrder.set({
+                quantityExecuted: currentQuantity + execution.quantityExecuted,
+                status: execution.status
+            });
+            _orders.add(currentOrder, {merge: true});
         });
 
         return _repository;

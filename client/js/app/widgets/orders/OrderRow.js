@@ -44,6 +44,7 @@ define(
             initialize: function() {
                 this.model.on('change', this.render, this);
                 this.model.on('sync', this.render, this);
+//                this.model.on('update', this.render, this);
 //                $('#multi-trade-dialog').hide();
             },
 
@@ -52,21 +53,7 @@ define(
 
                 // Call super
                 Backbone.View.apply( this, arguments );
-            }//,
-
-//            render: function() {
-//
-//                var template = this.getTemplate();
-//                var context = this.model.toJSON();
-//
-//                // Destroy existing children
-//                this.destroyChildren();
-//
-//                this.$el.html(template(context));
-//                this._setupElements();
-//
-//                return this;
-//            }
+            }
         });
     }
 );
