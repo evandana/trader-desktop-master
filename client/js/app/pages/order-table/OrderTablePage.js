@@ -47,7 +47,7 @@ define(
                         viewClass: HeaderWidget,
                         parentElement: this.$el,
                         options: {
-                            model: Repository.getloggedInUser().attributes.name
+                            model: Repository.getloggedInUser()
                         }
                     },
                     {

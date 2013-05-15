@@ -26,10 +26,9 @@ define(
         'app/widgets/orders/OrderTable',
         'backbone',
         'keel/BaseView',
-        'text!app/widgets/orders/OrderActionsTemplate.html',
-        'underscore'
+        'text!app/widgets/orders/OrderActionsTemplate.html'
     ],
-    function(Repository, OrderService, OrderTable, Backbone, BaseView, OrderActionsTemplate, _) {
+    function(Repository, OrderService, OrderTable, Backbone, BaseView, OrderActionsTemplate) {
         'use strict';
 
         return BaseView.extend({
@@ -47,12 +46,8 @@ define(
                 'click .js-deleteAll': 'deleteAll',
                 'click .js-refresh': 'refreshOrders',
 
-                'click .js-chart': 'viewTable',
+                'click .js-chart': 'viewChart',
                 'click .js-table': 'viewTable'
-            },
-
-            initialize: function() {
-                this.collection.on('change', this.render, this);
             },
 
             constructor: function() {
@@ -85,46 +80,18 @@ define(
             },
 
             trade: function () {
-                for (var i = 0; i<3; i++) {
-                    this.addOrder();
-                }
+                OrderService.numberOfOrder(3, Repository.getloggedInUser().attributes.id);
             },
 
             deleteAll: function () {
                 $.ajax({
                     url: 'http://localhost:8080/rest/orders',
-                    type: 'DELETE',
-                    success: function () {
-
-                    }
+                    type: 'DELETE'
                 });
             },
 
             refreshOrders: function () {
                 Repository.refreshOrders();
-            },
-
-            addOrder: function () {
-                var that = this;
-
-                var data = {
-                    'side': 'Buy',
-                    'symbol': Repository.getInstruments().at(_.random(0,Repository.getInstruments().length)).attributes.symbol,
-                    'quantity': _.random(1,50)*1000,
-                    'limitPrice': _.random(10000,100000)/100,
-                    'traderId': Repository.getloggedInUser().attributes.id
-                };
-
-                $.ajax({
-                    url: 'http://localhost:8080/rest/orders',
-                    type: 'POST',
-                    contentType: 'application/json',
-                    data: JSON.stringify(data),
-                    success: function () {
-//                        console.log('order created: ', data);
-                        that.render();
-                    }
-                });
             }
         });
     }

@@ -1,9 +1,3 @@
-{{! include OrderActions }}
-
-{{! include OrderRow }}
-
-
-<table class="js-orderTable">
     <tr>
         <th class="textAlign-center">ID</th>
         <th class="textAlign-left">Creation Time</th>
@@ -17,19 +11,3 @@
         <th class="textAlign-center">Status</th>
         <th class="textAlign-center">Trader</th>
     </tr>
-    {{#each orders}}
-    <tr>
-        <td class="textAlign-center">{{id}}</td>
-        <td class="textAlign-left">{{creationTime}}</td>
-        <td class="textAlign-center">{{side}}</td>
-        <td class="textAlign-center">{{symbol}}</td>
-        <td class="textAlign-right">{{quantity}}</td>
-        <td class="textAlign-right">{{quantityPlaced}}</td>
-        <td class="textAlign-right">{{quantityExecuted}}</td>
-        <td class="textAlign-right">{{limitPrice}}</td>
-        <td class="textAlign-right">{{priority}}</td>
-        <td class="textAlign-center">{{status}}</td>
-        <td class="textAlign-center">{{traderId}}</td>
-    </tr>
-    {{/each}}
-</table>

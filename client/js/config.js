@@ -40,7 +40,14 @@ var require = {
         backbone:                    'vendor/backbone-1.0.0',
 
         // Templating
-        handlebars:                  'vendor/handlebars-1.0.rc.1'
+        handlebars:                  'vendor/handlebars-1.0.rc.1',
+
+        // Formatting and parsing of dates and numbers,
+        // similar to SimpleDateFormat and NumberFormat APIs
+        jqueryformat:                'vendor/jquery.format-1.2',
+
+        // Date library
+        moment:                      'vendor/moment-1.7.2'
     },
 
     shim: {

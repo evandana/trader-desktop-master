@@ -44,18 +44,18 @@ define(
                 'click .js-logoutButton': 'logout'
             },
 
-            render: function() {
-                var template = this.getTemplate();
-                var context = this.model;
-
-                // Destroy existing children
-                this.destroyChildren();
-
-                this.$el.html(template({user: context}));
-                this._setupElements();
-
-                return this;
-            },
+//            render: function() {
+//                var template = this.getTemplate();
+//                var context = this.model.;
+//
+//                // Destroy existing children
+//                this.destroyChildren();
+//
+//                this.$el.html(template({user: context}));
+//                this._setupElements();
+//
+//                return this;
+//            },
 
             logout: function() {
                 Repository.setloggedInUser();

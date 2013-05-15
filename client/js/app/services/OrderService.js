@@ -15,7 +15,7 @@ define(['app/domain/Repository'],
                     var number =  Math.floor(Math.random() * 29);
                     var quantityNumber = 1 + Math.floor(Math.random() * 50000);
                     var symbol = instruments.at(number).get('symbol');
-                    var price = instruments.at(number).get('lastTrade');
+                    var price = Math.round(instruments.at(number).get('lastTrade')*100)/100;
                     var data = { 'side': 'Buy', 'symbol': symbol, 'quantity': quantityNumber, 'limitPrice': price, 'traderId': traderId };
 
                     this.createOrder(data);

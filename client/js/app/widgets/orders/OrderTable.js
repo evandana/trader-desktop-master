@@ -33,50 +33,9 @@ define(
 
         return BaseView.extend({
 
-//            render: function() {
-//                this.destroyChildren();
-//
-//                this.collection.each(function(order) {
-//                    var orderId = 'order-' + order.get('id');
-//                    this.addChild({
-//                        id: orderId,
-//                        viewClass: OrderTableTemplate,
-//                        parentElement: this.$el,
-//                        options: {
-//                            model: order,
-//                            id: orderId,
-//                            className: (order.get('status') === 'Canceled') ? 'canceled' : ''
-//                        }
-//                    });
-//
-//                    // Add rows for executions
-//                    var executions = order.get('executions');
-//                    if (executions && executions.length > 0) {
-////                        this._renderExecutions(executions, orderId);
-//                    }
-//                }, this);
-//
-//                return this;
-//            },
-//
-//            _renderExecutions: function(executions, orderId) {
-//                executions.forEach(function(execution) {
-//                    var id = 'execution-' + execution.id;
-//                    this.addChild({
-//                        id: id,
-//                        viewClass: ExecutionView,
-//                        parentElement: this.$el,
-//                        options: {
-//                            model: execution,
-//                            id: id,
-//                            className: 'child-of-' + orderId
-//                        }
-//                    });
-//                }, this);
-//            }
-
-            tagName: 'section',
+            tagName: 'table',
             id: 'order-table',
+            className: 'js-orderTable',
 
             template: {
                 name: 'OrderTable',
@@ -84,9 +43,11 @@ define(
             },
 
             initialize: function() {
+                this.collection.on('add', this.renderRow, this);
+                this.collection.on('delete', this.render, this);
 //                this.collection.on('change', this.render, this);
-                this.collection.on('reset', this.render, this);
-                this.collection.on('sync', this.render, this);
+//                this.collection.on('reset', this.render, this);
+//                this.collection.on('sync', this.render, this);
             },
 
             constructor: function() {
@@ -96,19 +57,27 @@ define(
                 Backbone.View.apply( this, arguments );
             },
 
-            render: function() {
+            postRender: function() {
+                this.collection.each(function(order) {
+                    this.renderRow(order);
+                }, this);
+            },
 
-                var template = this.getTemplate();
-                var context = this.collection.toJSON();
-
-                // Destroy existing children
-                this.destroyChildren();
-
-                this.$el.html(template({orders: context}));
-                this._setupElements();
-
-                return this;
+            renderRow: function (order) {
+                var orderId = 'order-' + order.get('id');
+                this.addChild({
+                    id: orderId,
+                    viewClass: OrderRow,
+                    parentElement: this.$el,
+                    options: {
+                        model: order,
+                        id: orderId,
+                        className: (order.get('status') === 'Canceled') ? 'canceled' : ''
+                    }
+                });
             }
+
+
         });
     }
 );

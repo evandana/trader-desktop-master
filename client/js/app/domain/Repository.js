@@ -90,8 +90,8 @@ define(
         });
 
         Socket.on('placementCreatedEvent', function(placement) {
-            _orders.fetch();
-            console.log(placement);
+            _orders.add(_orders.get(placement.idAttribute), {merge: true});
+//            console.log(placement);
             //_orders.set(placement.orderId);
         });
 

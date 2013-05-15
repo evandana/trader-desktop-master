@@ -25,36 +25,26 @@ define(
         'app/services/OrderService',
         'backbone',
         'keel/BaseView',
-        'text!app/widgets/orders/OrdersTemplate.html'
+        'text!app/widgets/orders/OrderRowTemplate.html'
     ],
-    function(Repository, OrderService, Backbone, BaseView, OrdersTemplate) {
+    function(Repository, OrderService, Backbone, BaseView, OrderRowTemplate) {
         'use strict';
 
         return BaseView.extend({
-            tagName: 'section',
-            id: 'order-table',
+            tagName: 'tr',
+//            id: 'order-row' + this.id,
 
-            elements: ['orderTable'],
+            elements: ['OrderRow'],
 
             template: {
-                name: 'OrdersTemplate',
-                source: OrdersTemplate
-            },
-
-            events: {
-                'click .js-trade': 'trade',
-                'click .js-deleteAll': 'deleteAll',
-                'click .js-refresh': 'getOrders',
-
-                // TODO: delete
-                'click .js-addOrder': 'addOrder',
-                'click .js-placeOrder': 'placeOrder',
-                'click .js-getOrders': 'getOrders'
+                name: 'OrderRowTemplate',
+                source: OrderRowTemplate
             },
 
             initialize: function() {
                 this.model.on('change', this.render, this);
-                $('#multi-trade-dialog').hide();
+                this.model.on('sync', this.render, this);
+//                $('#multi-trade-dialog').hide();
             },
 
             constructor: function() {
@@ -62,23 +52,21 @@ define(
 
                 // Call super
                 Backbone.View.apply( this, arguments );
+            }//,
 
-                this.addOrder();
-            },
-
-            render: function() {
-
-                var template = this.getTemplate();
-                var context = this.model.toJSON();
-
-                // Destroy existing children
-                this.destroyChildren();
-
-                this.$el.html(template({orders: context}));
-                this._setupElements();
-
-                return this;
-            }
+//            render: function() {
+//
+//                var template = this.getTemplate();
+//                var context = this.model.toJSON();
+//
+//                // Destroy existing children
+//                this.destroyChildren();
+//
+//                this.$el.html(template(context));
+//                this._setupElements();
+//
+//                return this;
+//            }
         });
     }
 );
